@@ -7,9 +7,14 @@
 
 
 		<div id="wrapper">
-
-			
-
+			&nbsp;&nbsp;&nbsp;&nbsp;
+<form method="get" action="/images" id="search">
+  <p>
+    								<%= text_field_tag :search, params[:search] %>
+    								<%= submit_tag "Search", :name => nil %>
+  								</p>
+</form>
+		
 			<div id="main">
 				<div id="reel">
 					
@@ -23,15 +28,16 @@
 			<p>Creative Commons Gallery</p>
 							</div>
 						</div>
+						<% @images.each do |ref| %>
+						<article class="item thumb" data-width="282">
+							<h2></h2>
+
+							<a href= "<%= ref %>" ><img src="<%= ref %>" alt=""></a>
+						</article>
+						<% end %>
 
 					<!-- Thumb Items -->
 
-						
-						<article class="item thumb" data-width="282">
-							
-
-							<a href= "" ><img src="" alt=""></a>
-						</article>
 						
 
 						
