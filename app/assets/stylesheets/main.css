@@ -214,10 +214,10 @@
 			}
 
 			body {
-				background-image: url("overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
-				background-image: url("overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
-				background-image: url("overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
-				background-image: url("overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
+				background-image: url("s.jpg"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
+				background-image: url("s.jpg"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
+				background-image: url("s.jpg"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
+				background-image: url("s.jpg"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("bg.jpg");
 				background-position: top left, bottom left, auto;
 				background-size: auto, 100% 100%, cover;
 				background-repeat: repeat, no-repeat, auto;
