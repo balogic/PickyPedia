@@ -1,58 +1,38 @@
-<!DOCTYPE HTML>
-<!--
-	Parallelism by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-
-		<div id="wrapper">
+<div id="wrapper">
 			&nbsp;&nbsp;&nbsp;&nbsp;
-<form method="get" action="/images" id="search">
-  <p>
-    								<%= text_field_tag :search, params[:search] %>
-    								<%= submit_tag "Search", :name => nil %>
-  								</p>
-</form>
-		
-			<div id="main">
-				<div id="reel">
-					
 
-					<!-- Header Item -->
-
-						<div id="header" class="item" data-width="400">
-							<div class="inner">
-								
-								<h1>PickyPedia</h1>
-			<p>Creative Commons Gallery</p>
-							</div>
-						</div>
-						<% @images.each do |ref| %>
-						<article class="item thumb" data-width="282">
-							<h2></h2>
-
-							<a href= "<%= ref %>" ><img src="<%= ref %>" alt=""></a>
-						</article>
-						<% end %>
-
-					<!-- Thumb Items -->
-
-						
-
-						
-				</div>
-			</div>
-
-			<div id="footer">
-				<div class="left">
-					<p>This is <strong>PickyPedia</strong>, an image gallery from<a href="http://html5up.net"> Creative Commons</a>. Free for personal<br />
-					and commercial use under the <a href="http://html5up.net/license">Creative Commons Attribution</a> license.</p>
-				</div>
-				<div class="right">
-					
-					
-				</div>
-			</div>
-
-		</div>
+    <form method="root" id="search">
+        <p><%= text_field_tag :search, params[:search] %><%= submit_tag "Search", :name => nil %>
+        </p>
+    </form>
+    <div id="main">
+        <div id="reel">
+            <!-- Header Item -->
+            <div id="header" class="item" data-width="400">
+                <div class="inner">
+                    <h1>PickyPedia</h1>
+                    <p>Creative Commons Gallery</p>
+                </div>
+            </div><% @images.each do |ref| %>
+            <article class="item thumb" data-width="282">
+                <h2></h2>
+                <a href= "<%= ref %>" >
+                    <img src="<%= ref %>" alt="">
+                    </a>
+                </article><% end %>
+                <!-- Thumb Items -->
+            </div>
+        </div>
+        <div id="footer">
+            <div class="left">
+                <p>This is
+                    <strong>PickyPedia</strong>, an image gallery from
+                    <a href="http://html5up.net"> Creative Commons</a>. Free for personal
+                    <br />
+					and commercial use under the
+                    <a href="http://html5up.net/license">Creative Commons Attribution</a> license.
+                </p>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
